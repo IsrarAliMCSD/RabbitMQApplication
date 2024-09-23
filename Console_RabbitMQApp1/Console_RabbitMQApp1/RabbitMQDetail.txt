@@ -1,0 +1,16 @@
+﻿RabbitMQ is an open-source message broker that facilitates communication between different services or components of a distributed system through asynchronous messaging. It uses the AMQP (Advanced Message Queuing Protocol) to handle and route messages between producers (who send messages) and consumers (who receive them). RabbitMQ enables decoupled systems by allowing producers and consumers to operate independently, improving scalability and resilience
+Key Concepts in RabbitMQ:
+Producer: Sends messages to RabbitMQ.
+Exchange: Receives messages from producers and routes them to appropriate queues based on rules.
+Types of exchanges: Direct, Topic, Fanout, Headers.
+Queue: Stores messages until they are processed by consumers.
+Consumer: Receives and processes messages from queues.
+Binding: Defines the relationship between an exchange and a queue.
+Routing Key: Helps in routing messages to specific queues.
+Why use RabbitMQ in .NET Core?
+RabbitMQ is often used in microservices architecture, where services need to communicate without depending on each other being online. It can also be used for:
+
+Background task processing
+Event-driven systems
+Load balancing
+Decoupling services
